@@ -1,0 +1,220 @@
+/* mute digressions */
+
+.section.digression {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in;
+}
+
+.section.digression:hover {
+    opacity: 1.0;
+    transition: opacity 0.5s ease-in;
+}
+
+/* highlight selected mathjax display */
+
+.mtd:target, div:target p {
+    background: rgba(181, 137, 0, 0.27);
+}
+
+
+/* toc */
+
+nav {
+    width: 85%;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav li {
+    padding: 0;
+}
+
+/* before style */
+
+.problem:before, .open:before, .algorithm:before, .example:before, .theorem:before, .lemma:before, .corollary:before, .definition:before, .claim:before, .proof:before, .proofsketch:before, .proofflow:before, .proposition:before, .exercise:before, .conjecture:before, .figure:before, .heuristic:before, .remark:before, .note:before {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* before content */
+
+.lemma:before {
+    content: "Lemma. ";
+}
+
+.corollary:before {
+    content: "Corollary. ";
+}
+
+.conjecture:before {
+    content: "Conjecture. ";
+}
+
+.example:before {
+    content: "Example. ";
+}
+
+.claim:before {
+    content: "Claim. ";
+}
+
+.open:before {
+    content: "Open Problem. ";
+}
+
+.problem:before {
+    content: "Problem. ";
+}
+
+.algorithm:before {
+    content: "Algorithm. ";
+}
+
+.note:before {
+    content: "Note. ";
+}
+
+.remark:before {
+    content: "Remark. ";
+}
+
+.theorem:before {
+    content: "Theorem. ";
+}
+
+.definition:before {
+    content: "Definition. ";
+}
+
+.exercise:before {
+    content: "Exercise. ";
+}
+
+.proof:before {
+    content: "Proof. ";
+}
+
+.proofsketch:before {
+    content: "Proof Sketch. ";
+}
+
+.proposition:before {
+    content: "Proposition. ";
+}
+
+.proofflow:before {
+    content: "Proof Flow. ";
+}
+
+.figure:before {
+    content: "Figure. ";
+}
+
+/* before content with title */
+
+.definition[title]:before {
+    content: "Definition (" attr(title) ").";
+}
+.example[title]:before {
+    content: "Example (" attr(title) ").";
+}
+.problem[title]:before {
+    content: "Problem (" attr(title) ").";
+}
+.open[title]:before {
+    content: "Open Problem (" attr(title) ").";
+}
+.theorem[title]:before {
+    content: "Theorem (" attr(title) ").";
+}
+.lemma[title]:before {
+    content: "Lemma (" attr(title) ").";
+}
+.claim[title]:before {
+    content: "Claim (" attr(title) ").";
+}
+.corollary[title]:before {
+    content: "Corollary (" attr(title) ").";
+}
+.conjecture[title]:before {
+    content: "Conjecture (" attr(title) ").";
+}
+.exercise[title]:before {
+    content: "Exercise (" attr(title) ").";
+}
+.hypothesis[title]:before {
+    content: "Hypothesis (" attr(title) ").";
+}
+.proposition[title]:before {
+    content: "Proposition (" attr(title) ").";
+}
+.remark[title]:before {
+    content: "Remark (" attr(title) ").";
+}
+.algorithm[title]:before {
+    content: "Algorithm (" attr(title) ").";
+}
+
+.proof[title]:before {
+    content: attr(title) ".";
+}
+
+.proofsketch[title]:before {
+    content: attr(title) ".";
+}
+
+.proofflow[title]:before {
+    content: attr(title) ".";
+}
+
+.figure[title]:before {
+    content: "Figure (" attr(title) ").";
+}
+
+/* body style */
+
+.theorem, .lemma, .corollary, .problem, .open, .conjecture {
+    font-style: italic;
+}
+
+.figure {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* after content */
+
+.example p:last-child:after, .algorithm p:last-child:after, .claim p:last-child:after, .proof p:last-child:after, .proofsketch p:last-child:after, .proofflow p:last-child:after, .problem p:last-child:after, .open p:last-child:after, .proposition p:last-child:after, .definition p:last-child:after, .corollary p:last-child:after, .theorem p:last-child:after, .note p:last-child:after, .lemma p:last-child:after, .exercise p:last-child:after{
+    font-size: 1rem;
+    float:right;
+    margin-bottom: 25px;
+}
+
+.proof p:last-child:after {
+    content: "\25FC";
+}
+
+.proof {
+  border-style:inset;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.proofsketch p:last-child:after {
+    content: "\25FC";
+}
+
+.proofflow p:last-child:after {
+    content: "\25FC";
+}
+
+.example p:last-child:after, .algorithm p:last-child:after, .theorem p:last-child:after, .problem p:last-child:after, .open p:last-child:after, .note p:last-child:after, .lemma p:last-child:after, .exercise p:last-child:after {
+    content: "★";
+}
+
+.lemma, .theorem, .corollary, .definition, .claim, .example, .proposition, .conjecture {
+    margin-bottom: 10px;
+}

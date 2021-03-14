@@ -1,0 +1,9 @@
+{
+  "lang": "en-US",
+  "name": "Harvard TSA",
+  "short_name": "HarvardTSA",
+  "theme_color": "#24292e",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display": "standalone"
+}

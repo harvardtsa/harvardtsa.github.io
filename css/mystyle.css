@@ -1,0 +1,347 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+    background-color: #F2F2F2;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+p, ul, li {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.nav {
+    font-size: 16px;
+}
+
+.jumbotron {
+    background-color: rgba(10%,40%,50%,0.1);
+}
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+/* Cooking */
+.cooking {
+  height:       800px;
+}
+
+/* Images */
+.img-left {
+    padding:    25px;
+    width:      300px;
+}
+
+.img-right {
+    padding:    25px;
+    width:      300px;
+}
+
+.img-center {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+.img-center-long {
+    display: block;
+    margin: auto;
+    width: 700px;
+}
+
+.img-center-short {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+/* Tag */
+.tag {
+    font-size: 10pt;
+    border-radius: 5px;
+    padding: 1px;
+    opacity: 0.8;
+}
+
+.tag-cc {
+    background: #BDBDBD;
+}
+
+.tag-si {
+    background: #FFCC00;
+}
+
+.tag-gt {
+    background: #00BFFF;
+}
+
+.tag-dp {
+    background: #A9DFBF;
+}
+
+.tag-hs {
+    background: #ff9999;
+}
+
+.tag-it {
+    background: #ffccff;
+}
+
+.tag-ls {
+    background: #ccccff;
+}
+
+.tag-ps {
+    background: #ffcc99;
+}
+
+.tag-sdp {
+    background: #A9F5E1;
+}
+
+.tag-ex {
+    background: #E6ED8F;
+}
+
+.tag-sp {
+    background: #00FF00;
+}
+
+.tag-cl {
+    background: #BBFFBB;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background: #A4A4A4;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #F2F2F2;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #F2F2F2;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #A4A4A4;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: #F6CED8;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: #F6CED8;
+}
+
+
+/* Home */
+
+.intro {
+    margin-right: 300px;
+    margin-left: 30px;
+}
+
+#intro {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+p.intro {
+    font-size: 16px;
+}
+
+#frontphoto {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+    float: right;
+}
+
+.researchphoto {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 300px;
+    float: right;
+}
+
+.researchphotobox {
+    margin-top: 0px;
+    margin-bottom: 00px;
+    padding-left: 20px;
+    padding-right: 0px;
+    width: 300px;
+    float: right;
+}
+
+#bookcover {
+    width: 200px;
+    float: right;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-right:0px;
+    margin-bottom: 0px;
+}
+
+.bookintro {
+    margin-right: 40%;
+}
+
+/* Research & Prjects & Notes */
+.topic {
+    background: "#FFFFFF";
+}
+
+.advisor {
+    font-style: italic;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: oblique;
+}
+
+.researchpic {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 300px;
+    float: left;
+}
+
+.classname {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.notename {
+    font-size: 12pt;
+}
+
+.note {
+    font-size: 14px;
+}
+
+.details {
+    margin-bottom: 30px;
+}
+
+.list {
+    font-size: 16px;
+}
+
+.lead {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* research */
+.researchpic {
+    padding:  20px;
+    width:    200px;
+}
+
+/* footer */
+.site-footer {
+    border-top: 1px solid #800517;
+    padding: 20px 0;
+}
+
+/* Tooltip */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* TGINF */
+@media (min-width: 50em) {
+  .signupsheet {
+    width: 500px;
+  }
+}
+
+@media (min-width: 70em) {
+  .signupsheet {
+    width: 600px;
+  }
+}
+
+@media (min-width: 100em) {
+  .signupsheet {
+    width: 700px;
+  }
+}
+
+@media (min-width: 150em) {
+  .signupsheet {
+    width: 800px;
+  }
+}
+
+@media (min-width: 200em) {
+  .signupsheet {
+    width: 900px;
+  }
+}
+
+@media (min-width: 250em) {
+  .signupsheet {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 300em) {
+  .signupsheet {
+    width: 1100px;
+  }
+}
