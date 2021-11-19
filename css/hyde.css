@@ -1,0 +1,936 @@
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * Container
+ * Reverse layout
+ * Themes
+ */
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+html {
+  font-family: serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
+}
+@media (min-width: 38em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 70em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15rem;
+    text-align: left;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+/* About section */
+@media (min-height: 30em) {
+  .sidebar-about {
+    margin-top: 1rem;
+  }
+}
+
+
+@media (min-height: 40em) {
+  .sidebar-about {
+    margin-top: 2rem;
+  }
+}
+
+
+@media (min-height: 44em) {
+  .sidebar-about {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-height: 47em) {
+  .sidebar-about {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-height: 50em) {
+  .sidebar-about {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-height: 54em) {
+  .sidebar-about {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-height: 57em) {
+  .sidebar-about {
+    margin-top: 12rem;
+  }
+}
+
+@media (min-height: 60em) {
+  .sidebar-about {
+    margin-top: 14rem;
+  }
+}
+
+@media (min-height: 65em) {
+  .sidebar-about {
+    margin-top: 16rem;
+  }
+}
+
+@media (min-height: 70em) {
+  .sidebar-about {
+    margin-top: 18rem;
+  }
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+.content-nosidebar {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 38em) {
+  .content {
+    max-width: 48rem;
+    margin-left: 18rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 68em) {
+  .content {
+    margin-left: 18rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 72em) {
+  .content {
+    margin-left: 20rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 76em) {
+  .content {
+    margin-left: 20rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 80em) {
+  .content {
+    margin-left: 21rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 84em) {
+  .content {
+    margin-left: 21rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 88em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 92em) {
+  .content {
+    margin-left: 24rem;
+    margin-right: 8rem;
+  }
+}
+
+@media (min-width: 96em) {
+  .content {
+    margin-left: 25rem;
+    margin-right: 9rem;
+  }
+}
+
+@media (min-width: 100em) {
+  .content {
+    margin-left: 26rem;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 104em) {
+  .content {
+    margin-left: 27rem;
+    margin-right: 11rem;
+  }
+}
+
+@media (min-width: 108em) {
+  .content {
+    margin-left: 28rem;
+    margin-right: 12rem;
+  }
+}
+
+@media (min-width: 112em) {
+  .content {
+    margin-left: 29rem;
+    margin-right: 13rem;
+  }
+}
+
+@media (min-width: 116em) {
+  .content {
+    margin-left: 30rem;
+    margin-right: 14rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .content {
+    margin-left: 31rem;
+    margin-right: 15rem;
+  }
+}
+
+@media (min-width: 124em) {
+  .content {
+    margin-left: 32rem;
+    margin-right: 16rem;
+  }
+}
+
+@media (min-width: 128em) {
+  .content {
+    margin-left: 33rem;
+    margin-right: 17rem;
+  }
+}
+
+@media (min-width: 132em) {
+  .content {
+    margin-left: 34rem;
+    margin-right: 18rem;
+  }
+}
+
+@media (min-width: 136em) {
+  .content {
+    margin-left: 35rem;
+    margin-right: 19rem;
+  }
+}
+
+@media (min-width: 140em) {
+  .content {
+    margin-left: 36rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 144em) {
+  .content {
+    margin-left: 37rem;
+    margin-right: 21rem;
+  }
+}
+
+@media (min-width: 148em) {
+  .content {
+    margin-left: 38rem;
+    margin-right: 22rem;
+  }
+}
+
+@media (min-width: 152em) {
+  .content {
+    margin-left: 39rem;
+    margin-right: 23rem;
+  }
+}
+
+@media (min-width: 156em) {
+  .content {
+    margin-left: 40rem;
+    margin-right: 24rem;
+  }
+}
+
+@media (min-width: 160em) {
+  .content {
+    margin-left: 41rem;
+    margin-right: 25rem;
+  }
+}
+
+@media (min-width: 164em) {
+  .content {
+    margin-left: 42em;
+    margin-right: 26em;
+  }
+}
+
+@media (min-width: 168em) {
+  .content {
+    margin-left: 43rem;
+    margin-right: 27rem;
+  }
+}
+
+@media (min-width: 172em) {
+  .content {
+    margin-left: 44rem;
+    margin-right: 28rem;
+  }
+}
+
+@media (min-width: 176em) {
+  .content {
+    margin-left: 45rem;
+    margin-right: 29rem;
+  }
+}
+
+@media (min-width: 180em) {
+  .content {
+    margin-left: 46rem;
+    margin-right: 30rem;
+  }
+}
+
+@media (min-width: 184em) {
+  .content {
+    margin-left: 47rem;
+    margin-right: 31rem;
+  }
+}
+
+@media (min-width: 188em) {
+  .content {
+    margin-left: 48rem;
+    margin-right: 32rem;
+  }
+}
+
+@media (min-width: 192em) {
+  .content {
+    margin-left: 49em;
+    margin-right: 33em;
+  }
+}
+
+@media (min-width: 196em) {
+  .content {
+    margin-left: 50rem;
+    margin-right: 34rem;
+  }
+}
+
+@media (min-width: 200em) {
+  .content {
+    margin-left: 51rem;
+    margin-right: 35rem;
+  }
+}
+
+@media (min-width: 204em) {
+  .content {
+    margin-left: 52rem;
+    margin-right: 36rem;
+  }
+}
+
+@media (min-width: 208em) {
+  .content {
+    margin-left: 53rem;
+    margin-right: 37rem;
+  }
+}
+
+@media (min-width: 212em) {
+  .content {
+    margin-left: 54rem;
+    margin-right: 38rem;
+  }
+}
+
+@media (min-width: 216em) {
+  .content {
+    margin-left: 55rem;
+    margin-right: 39rem;
+  }
+}
+
+@media (min-width: 220em) {
+  .content {
+    margin-left: 56rem;
+    margin-right: 40rem;
+  }
+}
+
+@media (min-width: 224em) {
+  .content {
+    margin-left: 57rem;
+    margin-right: 41rem;
+  }
+}
+
+@media (min-width: 228em) {
+  .content {
+    margin-left: 58rem;
+    margin-right: 42rem;
+  }
+}
+
+@media (min-width: 232em) {
+  .content {
+    margin-left: 59rem;
+    margin-right: 43rem;
+  }
+}
+
+@media (min-width: 236em) {
+  .content {
+    margin-left: 60rem;
+    margin-right: 44rem;
+  }
+}
+
+@media (min-width: 240em) {
+  .content {
+    margin-left: 61rem;
+    margin-right: 45rem;
+  }
+}
+
+@media (min-width: 244em) {
+  .content {
+    margin-left: 62rem;
+    margin-right: 46rem;
+  }
+}
+
+@media (min-width: 248em) {
+  .content {
+    margin-left: 63rem;
+    margin-right: 47rem;
+  }
+}
+
+@media (min-width: 252em) {
+  .content {
+    margin-left: 64rem;
+    margin-right: 48rem;
+  }
+}
+
+@media (min-width: 256em) {
+  .content {
+    margin-left: 65rem;
+    margin-right: 49rem;
+  }
+}
+
+@media (min-width: 260em) {
+  .content {
+    margin-left: 66rem;
+    margin-right: 50rem;
+  }
+}
+
+@media (min-width: 264em) {
+  .content {
+    margin-left: 67rem;
+    margin-right: 51rem;
+  }
+}
+
+@media (min-width: 268em) {
+  .content {
+    margin-left: 68rem;
+    margin-right: 52rem;
+  }
+}
+
+@media (min-width: 272em) {
+  .content {
+    margin-left: 69rem;
+    margin-right: 53rem;
+  }
+}
+
+@media (min-width: 276em) {
+  .content {
+    margin-left: 70rem;
+    margin-right: 54rem;
+  }
+}
+
+@media (min-width: 280em) {
+  .content {
+    margin-left: 71rem;
+    margin-right: 55rem;
+  }
+}
+
+@media (min-width: 284em) {
+  .content {
+    margin-left: 72rem;
+    margin-right: 56rem;
+  }
+}
+
+@media (min-width: 288em) {
+  .content {
+    margin-left: 73rem;
+    margin-right: 57rem;
+  }
+}
+
+@media (min-width: 292em) {
+  .content {
+    margin-left: 74rem;
+    margin-right: 58rem;
+  }
+}
+
+@media (min-width: 296em) {
+  .content {
+    margin-left: 75rem;
+    margin-right: 59rem;
+  }
+}
+
+@media (min-width: 300em) {
+  .content {
+    margin-left: 76rem;
+    margin-right: 60rem;
+  }
+}
+
+@media (min-width: 304em) {
+  .content {
+    margin-left: 77rem;
+    margin-right: 61rem;
+  }
+}
+
+@media (min-width: 308em) {
+  .content {
+    margin-left: 78rem;
+    margin-right: 62rem;
+  }
+}
+
+@media (min-width: 312em) {
+  .content {
+    margin-left: 79rem;
+    margin-right: 63rem;
+  }
+}
+
+@media (min-width: 316em) {
+  .content {
+    margin-left: 80rem;
+    margin-right: 64rem;
+  }
+}
+
+@media (min-width: 320em) {
+  .content {
+    margin-left: 81rem;
+    margin-right: 65rem;
+  }
+}
+
+@media (min-width: 324em) {
+  .content {
+    margin-left: 82rem;
+    margin-right: 66rem;
+  }
+}
+
+@media (min-width: 328em) {
+  .content {
+    margin-left: 83rem;
+    margin-right: 67rem;
+  }
+}
+
+@media (min-width: 332em) {
+  .content {
+    margin-left: 84rem;
+    margin-right: 68rem;
+  }
+}
+
+@media (min-width: 336em) {
+  .content {
+    margin-left: 85rem;
+    margin-right: 69rem;
+  }
+}
+
+@media (min-width: 340em) {
+  .content {
+    margin-left: 86rem;
+    margin-right: 70rem;
+  }
+}
+
+@media (min-width: 344em) {
+  .content {
+    margin-left: 87rem;
+    margin-right: 71rem;
+  }
+}
+
+@media (min-width: 348em) {
+  .content {
+    margin-left: 88rem;
+    margin-right: 72rem;
+  }
+}
+
+@media (min-width: 352em) {
+  .content {
+    margin-left: 89rem;
+    margin-right: 73rem;
+  }
+}
+
+@media (min-width: 356em) {
+  .content {
+    margin-left: 90rem;
+    margin-right: 74rem;
+  }
+}
+
+@media (min-width: 360em) {
+  .content {
+    margin-left: 91rem;
+    margin-right: 75rem;
+  }
+}
+
+@media (min-width: 364em) {
+  .content {
+    margin-left: 92rem;
+    margin-right: 76rem;
+  }
+}
+
+
+/* no sidebar */
+@media (min-width: 38em) {
+  .content-nosidebar {
+    max-width: 48rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 68em) {
+  .content-nosidebar {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 72em) {
+  .content-nosidebar {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+}
+
+@media (min-width: 76em) {
+  .content-nosidebar {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 80em) {
+  .content-nosidebar {
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+}
+
+@media (min-width: 84em) {
+  .content-nosidebar {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+@media (min-width: 88em) {
+  .content-nosidebar {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+}
+
+@media (min-width: 92em) {
+  .content-nosidebar {
+    margin-left: 14rem;
+    margin-right: 14rem;
+  }
+}
+
+@media (min-width: 96em) {
+  .content-nosidebar {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+}
+
+@media (min-width: 100em) {
+  .content-nosidebar {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+}
+
+@media (min-width: 104em) {
+  .content-nosidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 12rem;
+  }
+}
+
+
+
+/*
+ * Themes
+ *
+ * As of v1.1, Hyde includes optional themes to color the sidebar and links
+ * within blog posts. To use, add the class of your choosing to the `body`.
+ */
+
+/* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Red */
+.theme-base-08 .sidebar {
+  background-color: #ac4142;
+}
+.theme-base-08 .content a,
+.theme-base-08 .content-nosidebar a,
+.theme-base-08 .related-posts li a:hover {
+  color: #ac4142;
+}
+
+/* Orange */
+.theme-base-09 .sidebar {
+  background-color: #d28445;
+}
+.theme-base-09 .content a,
+.theme-base-09 .content-nosidebar a,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
+}
+
+/* Yellow */
+.theme-base-0a .sidebar {
+  background-color: #f4bf75;
+}
+.theme-base-0a .content a,
+.theme-base-0a .content-nosidebar a,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
+}
+
+/* Green */
+.theme-base-0b .sidebar {
+  background-color: #90a959;
+}
+.theme-base-0b .content a,
+.theme-base-0b .content-nosidebar a,
+.theme-base-0b .related-posts li a:hover {
+  color: #90a959;
+}
+
+/* Cyan */
+.theme-base-0c .sidebar {
+  background-color: #75b5aa;
+}
+.theme-base-0c .content a,
+.theme-base-0c .content-nosidebar a,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-0d .sidebar {
+  background-color: #6a9fb5;
+}
+.theme-base-0d .content a,
+.theme-base-0d .content-nosidebar a,
+.theme-base-0d .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-0e .sidebar {
+  background-color: #aa759f;
+}
+.theme-base-0e .content a,
+.theme-base-0e .content-nosidebar a,
+.theme-base-0e .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .sidebar {
+  background-color: #8f5536;
+}
+.theme-base-0f .content a,
+.theme-base-0f .content-nosidebar a,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
+}
+
+/* Havard */
+.theme-base-0h .sidebar {
+  background-color: #651e12;
+}
+.theme-base-0h .content a,
+.theme-base-0h .content-nosidebar a,
+.theme-base-0h .related-posts li a:hover {
+  color: #651e12;
+}
